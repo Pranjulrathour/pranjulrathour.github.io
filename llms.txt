@@ -1,0 +1,72 @@
+# Pranjul Rathour
+
+> GenAI engineering, hackathons and campus talks, answered from experience. Written by Pranjul Rathour, GenAI engineer in Kanpur, India (pranjulrathour41@gmail.com). Each page answers real search questions about one topic, cites primary sources, and draws on production systems he shipped (RAG.NextUpgrad, FineTune Studio, DocuLens AI, FaceVision, OCR & Speech Workspace) and three hackathon first prizes.
+
+- [About Pranjul Rathour](https://pranjulrathour.github.io/about/): bio, experience, awards, sessions delivered
+- [Contact](https://pranjulrathour.github.io/contact/): email and every profile
+
+## RAG & retrieval
+
+Retrieval-augmented generation, vector search and grounded answers, from a production platform.
+
+- [What is a vector database? How vector search works, when you need one, and FAISS vs pgvector vs Qdrant vs Pinecone](https://pranjulrathour.github.io/what-is-a-vector-database/): A vector database stores embeddings and finds the nearest ones fast. How vector search and ANN indexes work, when a library or Postgres is enough, and how to choose between FAISS, pgvector, Qdrant, Chroma, Weaviate, Pinecone and Milvus.
+- [What is an LLM? Large language models explained: tokens, context windows, parameters, open vs closed models, and what they cost to run](https://pranjulrathour.github.io/what-is-an-llm/): A large language model predicts the next token, and everything else follows from that. How LLMs are trained, what parameters, tokens and context windows mean, how GPT, Claude, Gemini, Llama and Mistral differ, what hallucination is, how to run one locally, and how to reason about cost. Written from shipping LLM products.
+- [RAG vs fine-tuning vs prompt engineering: which one your problem actually needs, with a decision tree and real costs](https://pranjulrathour.github.io/rag-vs-fine-tuning/): RAG supplies knowledge at answer time; fine-tuning changes behaviour; prompting steers both. When each wins, when to combine them, what each costs to build and maintain, the failure modes, and the decision tree I use with clients after building both a RAG platform and a fine-tuning platform in the same year.
+- [What are embeddings in AI? Text embeddings, vector similarity, choosing a model, and how embeddings power RAG and semantic search](https://pranjulrathour.github.io/what-are-embeddings-in-ai/): An embedding turns text, an image or audio into a vector so that similar things are close together. How embedding models are trained, what dimensions and similarity mean, how embeddings differ from tokens, how to choose and evaluate a model with MTEB, and how they are used in RAG, search, clustering and recommendation.
+- [What is chunking in RAG? Chunk size, overlap, structure-aware splitting and the experiments that actually decide retrieval quality](https://pranjulrathour.github.io/what-is-chunking-in-rag/): Chunking splits documents into retrievable passages, and it decides RAG quality more than the model does. Fixed, recursive, semantic, structure-aware and parent-child chunking compared, how to choose chunk size and overlap from your own questions, how to chunk PDFs, tables and code, and the mistakes that make retrieval fail.
+- [What is RAG in AI? Retrieval-augmented generation, explained from a production system](https://pranjulrathour.github.io/what-is-rag-in-ai/): RAG gives a language model documents to read before it answers. What it is, how the pipeline works, when to use it instead of fine-tuning, and how I built one that refuses to guess.
+
+## Fine-tuning LLMs
+
+LoRA, QLoRA, datasets, loss curves and evaluation, from building a fine-tuning platform.
+
+- [How to fine-tune an LLM: LoRA, QLoRA, datasets and evaluation, from building a fine-tuning platform](https://pranjulrathour.github.io/how-to-fine-tune-an-llm/): What fine-tuning an LLM means, when it beats RAG or prompting, how LoRA and QLoRA make it fit on a free GPU, how to prepare a dataset, read the loss curve and evaluate honestly.
+- [How to prepare a dataset for fine-tuning an LLM: formats, chat templates, how much data, synthetic data, validation and the checklist before you train](https://pranjulrathour.github.io/how-to-prepare-a-dataset-for-fine-tuning/): The dataset is the fine-tune. How to write a spec, choose between Alpaca, ShareGPT and chat formats, apply the model's chat template correctly, decide how many examples you need, generate and filter synthetic data, deduplicate, split, and validate every row before spending a GPU hour. From building a fine-tuning platform.
+- [What is quantization in LLMs? 4-bit and 8-bit models, GGUF vs AWQ vs GPTQ, quality loss, and running big models on small hardware](https://pranjulrathour.github.io/what-is-quantization-in-llms/): Quantization stores model weights in fewer bits so LLMs fit in less memory and run faster. How it works, what INT8, INT4, NF4 and GGUF mean, how GGUF, AWQ and GPTQ differ and when to use each, how much quality you lose, how it relates to QLoRA, and how to quantize your own fine-tuned model for a laptop or a server.
+
+## Vision, speech & OCR
+
+Face recognition, liveness, document AI, speech-to-text and on-device inference.
+
+- [How does face recognition work? Detection, embeddings, thresholds and liveness, from building FaceVision](https://pranjulrathour.github.io/how-does-face-recognition-work/): Face detection finds faces; face recognition turns each face into an embedding and compares distances against a threshold; liveness detection stops a photo from passing. How each step works, why systems fail on twins and low light, how accurate they are, the privacy rules, and how I built a browser-only version that never uploads a face.
+- [How does OCR work? From Tesseract to document AI: turning scanned PDFs and invoices into searchable, structured text](https://pranjulrathour.github.io/how-does-ocr-work/): OCR turns images of text into text. How the pipeline works, where Tesseract still fits, how vision-language models changed document AI, how to OCR a PDF for free, how to extract invoice fields you can trust, and how I built a page-batched OCR and speech workspace on Mistral.
+- [How does speech to text work? Whisper, real-time transcription architecture, Indian languages, and building a live transcription feature](https://pranjulrathour.github.io/how-does-speech-to-text-work/): How automatic speech recognition turns audio into text, what changed with Whisper, how to build real-time transcription with streaming and voice activity detection, how to handle Hindi and mixed-language speech, the accuracy metric that matters, and how I built a live speech-to-text feature into a document workspace.
+
+## Shipping AI apps
+
+Agents, prompts, costs, security and deployment for AI products that survive real users.
+
+- [What is prompt engineering? Techniques that work, system prompts, prompt injection, and whether it is still a job](https://pranjulrathour.github.io/what-is-prompt-engineering/): Prompt engineering is writing and testing the instructions a language model runs on. The techniques that hold up, how system prompts differ from user prompts, what prompt injection is and how to defend against it, how to learn it, and where it sits next to RAG, agents and fine-tuning.
+- [How to build an AI app and deploy it for free: architecture, stack, hosting, costs and the checklist that survives real users](https://pranjulrathour.github.io/how-to-build-an-ai-app/): The architecture of an LLM app, a Python and FastAPI stack that ships in a weekend, free hosting options that still work in 2026, how to keep API costs predictable, the security and logging every AI app needs, and the mistakes that kill student projects after demo day. From shipping five production AI apps in six months.
+- [What is an AI agent? Agentic AI explained: tools, function calling, MCP, frameworks, and why most agents fail](https://pranjulrathour.github.io/what-is-an-ai-agent/): An AI agent is a language model in a loop with tools: it plans, acts, observes and repeats until a goal is met. What agentic AI means versus generative AI, how tool calling and the Model Context Protocol work, which frameworks to use, how to build one, and the guardrails that keep it from doing damage.
+- [What is MCP, the Model Context Protocol? How MCP servers work, MCP vs function calling vs APIs, and how to build one, from running a public server](https://pranjulrathour.github.io/what-is-mcp-model-context-protocol/): The Model Context Protocol is an open standard that lets any AI application use tools, data and prompts from any compliant server. How the client, server and host fit together, what tools, resources and prompts are, how MCP differs from function calling and plain APIs, the security model, how to build and test a server, and lessons from running a public MCP server at tools.scult.in.
+
+## Hackathons
+
+Ideas, pitches, demos and judging, from three first prizes and the judge's table.
+
+- [Hackathon project ideas that win: 40 AI and software ideas for students, with the hard part of each, from three first prizes](https://pranjulrathour.github.io/hackathon-project-ideas/): Forty hackathon project ideas across AI, agriculture, education, health, campus life and fintech, each with the user, the demo and the hard technical part named, plus how to pick one, how to adapt it to a problem statement, and what judges reward. From a builder with three first prizes and time on the judging panel.
+- [How to win a hackathon: what judges score, how to pick an idea, and the demo that works live, from three first prizes](https://pranjulrathour.github.io/how-to-win-a-hackathon/): What a hackathon is, how to find and join one in India, how to pick a problem, build in 24 to 48 hours, pitch in three minutes and demo without a crash. Written from three first prizes and the judge's table.
+- [Smart India Hackathon guide: how SIH works, how to register through your college, choose a problem statement, clear the internal round and present to ministry judges](https://pranjulrathour.github.io/smart-india-hackathon-guide/): What Smart India Hackathon is, how registration works through your institute, how to read and choose a problem statement, what the internal round eliminates most teams on, how to build the prototype and the presentation ministry judges expect, and what happens after. From a builder with three hackathon first prizes and time as a judge.
+
+## Speaking & mentoring
+
+Guest lectures, workshops, tech clubs and mentorship for colleges and communities.
+
+- [How to give a guest lecture in college: preparing a technical talk, handling Q&A, and becoming a speaker colleges invite back](https://pranjulrathour.github.io/how-to-give-a-guest-lecture-in-college/): How to get invited to speak at a college, how to prepare a 60- or 90-minute technical session students remember, how to structure slides and demos, how to handle a room that goes quiet or a question you cannot answer, and what turns one talk into repeat invitations. From speaking and mentoring at colleges in Kanpur and running a 500-member developer community.
+- [How to invite a guest speaker to your college: the email, the one-pager, fees, logistics and what makes a speaker say yes](https://pranjulrathour.github.io/how-to-invite-a-guest-speaker-to-your-college/): A checklist for inviting a guest speaker or guest lecturer to a college event: how to find one, what to put in the first email, whether speakers are paid, what a speaker needs from organisers, how to introduce them, and how to turn one session into a lasting mentor relationship. Written by someone who receives these invitations.
+- [How to start a tech community on campus: from five friends to 500 members, the sessions, the structure and the mistakes, from building TechVerse Enclave](https://pranjulrathour.github.io/how-to-start-a-tech-community-on-campus/): How to start and grow a student developer community or coding club: the first session, the weekly rhythm that matters more than promotion, roles and leadership handover, getting speakers and sponsors, running hackathons, and what TechVerse Enclave's growth to 500+ members and 200+ mentored students actually looked like.
+
+## GenAI careers
+
+Roadmaps, portfolios, interviews and salaries for students and early-career engineers in India.
+
+- [BCA vs B.Tech for an AI career: what each degree actually gives you, what it lacks, and how to make either one work, from a BCA who did](https://pranjulrathour.github.io/bca-vs-btech-for-ai-career/): The honest comparison of BCA and B.Tech CSE for students who want AI and GenAI careers in India: curriculum depth, maths, placements, eligibility for roles and higher studies, cost, and the gaps each degree leaves. Plus the plan that closes those gaps, from a BCA graduate who shipped five production AI systems.
+- [GenAI and LLM interview questions with answers: RAG, fine-tuning, prompting, agents, evaluation and system design, from both sides of the table](https://pranjulrathour.github.io/genai-interview-questions/): The questions GenAI engineer interviews actually ask in 2026 and how to answer them from experience: LLM fundamentals, RAG, fine-tuning, prompt engineering, agents, evaluation, cost and system design, plus behavioural questions about projects and failures. From interviewing candidates at SCULT INDIA and being interviewed.
+- [How to become an AI engineer in India: the GenAI engineer roadmap, skills, projects and salary reality, from a BCA to shipping five production apps](https://pranjulrathour.github.io/how-to-become-an-ai-engineer/): The skills a GenAI or AI engineer actually uses, a roadmap that works from any college including BCA and tier-3, the projects that get interviews, how to think about salary and remote roles in India, and what I did between a Kanpur classroom and shipping five production AI systems.
+
+## The journey
+
+From a BCA in Kanpur to shipping five production AI apps and leading a 14-member team.
+
+- [From a BCA in Kanpur to GenAI engineer: how I got here, what actually mattered, and what I would tell my first-year self](https://pranjulrathour.github.io/from-bca-student-to-genai-engineer/): The honest path from a BCA at VSICS Kanpur to shipping five production AI systems and leading engineering for a 14-member team: the community I built, the hackathons I won and lost, the first clients, the products, and the decisions that compounded. Written for students at colleges nobody has heard of.
