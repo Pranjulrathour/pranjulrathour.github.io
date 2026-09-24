@@ -4,7 +4,7 @@
 <link href="https://pranjulrathour.github.io/feed.xml" rel="self"/>
 <link href="https://pranjulrathour.github.io/"/>
 <id>https://pranjulrathour.github.io/</id>
-<updated>2026-09-24T10:29:10Z</updated>
+<updated>2026-09-24T10:38:59Z</updated>
 <author><name>Pranjul Rathour</name><email>pranjulrathour41@gmail.com</email></author>
 <entry><title>What is a vector database? How vector search works, when you need one, and FAISS vs pgvector vs Qdrant vs Pinecone</title><link href="https://pranjulrathour.github.io/what-is-a-vector-database/"/><id>https://pranjulrathour.github.io/what-is-a-vector-database/</id><updated>2026-09-24T08:00:00Z</updated><summary>A vector database stores embeddings and finds the nearest ones fast. How vector search and ANN indexes work, when a library or Postgres is enough, and how to choose between FAISS, pgvector, Qdrant, Chroma, Weaviate, Pinecone and Milvus.</summary></entry>
 <entry><title>What is prompt engineering? Techniques that work, system prompts, prompt injection, and whether it is still a job</title><link href="https://pranjulrathour.github.io/what-is-prompt-engineering/"/><id>https://pranjulrathour.github.io/what-is-prompt-engineering/</id><updated>2026-09-24T08:00:00Z</updated><summary>Prompt engineering is writing and testing the instructions a language model runs on. The techniques that hold up, how system prompts differ from user prompts, what prompt injection is and how to defend against it, how to learn it, and where it sits next to RAG, agents and fine-tuning.</summary></entry>
