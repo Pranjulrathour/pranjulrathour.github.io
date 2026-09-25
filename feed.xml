@@ -4,7 +4,7 @@
 <link href="https://pranjulrathour.github.io/feed.xml" rel="self"/>
 <link href="https://pranjulrathour.github.io/"/>
 <id>https://pranjulrathour.github.io/</id>
-<updated>2026-09-24T12:04:56Z</updated>
+<updated>2026-09-25T13:49:25Z</updated>
 <author><name>Pranjul Rathour</name><email>pranjulrathour41@gmail.com</email></author>
 <entry><title>What is machine learning, and what is it actually used for? The three types, how it differs from AI and deep learning, and real applications</title><link href="https://pranjulrathour.github.io/what-is-machine-learning/"/><id>https://pranjulrathour.github.io/what-is-machine-learning/</id><updated>2026-09-24T08:00:00Z</updated><summary>Machine learning is software that improves at a task from data instead of following rules a programmer wrote by hand. Supervised, unsupervised and reinforcement learning explained plainly, how ML relates to AI and deep learning, and where it is genuinely used today, from spam filters to the models behind modern generative AI.</summary></entry>
 <entry><title>What is a vector database? How vector search works, when you need one, and FAISS vs pgvector vs Qdrant vs Pinecone</title><link href="https://pranjulrathour.github.io/what-is-a-vector-database/"/><id>https://pranjulrathour.github.io/what-is-a-vector-database/</id><updated>2026-09-24T08:00:00Z</updated><summary>A vector database stores embeddings and finds the nearest ones fast. How vector search and ANN indexes work, when a library or Postgres is enough, and how to choose between FAISS, pgvector, Qdrant, Chroma, Weaviate, Pinecone and Milvus.</summary></entry>
