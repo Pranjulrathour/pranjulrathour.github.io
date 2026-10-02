@@ -50,7 +50,7 @@ main#main:not(.h){padding-top:84px}
 .rprog i{display:block;height:100%;transform-origin:0 50%;transform:scaleX(var(--p,0));background:linear-gradient(90deg,var(--accent),#ffb36b)}
 /* ---------- guide pages ---------- */
 .art{overflow-x:clip}
-.art .wrap{max-width:1200px;padding:0 24px}
+.art .wrap{max-width:1200px;padding-left:24px;padding-right:24px}
 .ahero{position:relative;isolation:isolate;padding:44px 0 34px}
 .ahero:before{content:"";position:absolute;inset:-120px -10% -320px;z-index:-2;pointer-events:none;
   background:radial-gradient(640px 460px at 82% 20%,var(--h-glow),transparent 70%),radial-gradient(560px 420px at 4% 70%,var(--h-glow2),transparent 70%);
@@ -195,6 +195,6 @@ main#main:not(.h){padding-top:84px}
 @media (max-width:860px){.band2{grid-template-columns:1fr}.band2 .im{min-height:340px}}
 .art .endspace{height:80px}
 @media (max-width:700px){.art .prose .ig:not(.ig-carousel){overflow-x:auto;padding:12px}.art .prose .ig:not(.ig-carousel) svg{min-width:640px}.art .prose .capsule{font-size:16.5px;padding:18px 18px 20px}}
-@media (max-width:640px){.art .wrap{padding:0 16px}.ahero{padding-top:30px}.art .prose{font-size:17.5px}.art .prose>h2{margin-top:60px}.band2,.kread{margin-top:72px}.kread{padding-top:0}}
+@media (max-width:640px){.art .wrap{padding-left:16px;padding-right:16px}.ahero{padding-top:30px}.art .prose{font-size:17.5px}.art .prose>h2{margin-top:60px}.band2,.kread{margin-top:72px}.kread{padding-top:0}}
 @media print{.fnav,.rail,.rprog,.kread,.band2{display:none}.abody{display:block}}
 @media (prefers-reduced-motion:reduce){.aphoto .chip,.fnav .menu{animation:none}}
