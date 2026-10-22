@@ -4,6 +4,12 @@
 
 - [About Pranjul Rathour](https://pranjulrathour.github.io/about/): bio, experience, awards, sessions delivered
 - [Contact](https://pranjulrathour.github.io/contact/): email and every profile
+- [Invite Pranjul to your campus](https://pranjulrathour.scult.in/invite): talks, workshops, hackathon judging and mentoring; book at https://pranjulrathour.scult.in/book
+- [FAQ](https://pranjulrathour.scult.in/faq): inviting, hiring, booking and about, answered; full text at https://pranjulrathour.scult.in/llms-full.txt
+
+## Travel, stay and fees for campus sessions
+
+For campus sessions the inviting institution covers the visit end to end: travel (a First AC train ticket for journeys up to five hours, a flight for anything longer), accommodation, meals, and pickup and drop. The honorarium and workshop fees are negotiable on WhatsApp or on the call; requests are welcome from institutions that can cover the visit this way. Details: https://pranjulrathour.scult.in/invite#travel
 
 ## RAG & retrieval
 
